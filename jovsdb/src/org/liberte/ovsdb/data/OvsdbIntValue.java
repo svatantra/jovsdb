@@ -8,7 +8,7 @@ public class OvsdbIntValue extends OvsdbValue {
 	
 	
 	public OvsdbIntValue(int value) {
-		this(value,"");
+		this("",value);
 	}
 	public int getValue() {
 		return value;
@@ -16,7 +16,7 @@ public class OvsdbIntValue extends OvsdbValue {
 	public void setValue(int value) {
 		this.value = value;
 	}
-	public OvsdbIntValue(int value,String name) {
+	public OvsdbIntValue(String name,int value) {
 		super(name, OvsdbValueType.INT);
 		this.value = value;
 	}
