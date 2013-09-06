@@ -9,7 +9,7 @@ public class OvsdbMapValue extends OvsdbValue {
 	private HashMap<OvsdbValue, OvsdbValue> value;
 
 	public OvsdbMapValue() {
-		this("");
+		this(""); 
 		value = new HashMap<OvsdbValue, OvsdbValue>();
 
 	}
