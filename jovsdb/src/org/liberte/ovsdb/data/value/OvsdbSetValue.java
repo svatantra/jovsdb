@@ -20,11 +20,10 @@ public class OvsdbSetValue extends OvsdbValue {
 		return value;
 	}
 
-	public void setValue(ArrayList<OvsdbValue> value) {
-		this.value = value;
-	}
 	
-	public void addEntry(OvsdbValue entry){
+	public void addEntry(OvsdbValue entry) throws OvsdbInvalidValueException{
+		if((entry.getType() == OvsdbValueType.SET) ||(entry.getType() == OvsdbValueType.MAP))
+			throw new OvsdbInvalidValueException("Invalid Value in Set");
 		this.value.add(entry);
 	}
 	

@@ -22,11 +22,12 @@ public class OvsdbMapValue extends OvsdbValue {
 		return value;
 	}
 
-	public void setValue(HashMap<OvsdbValue, OvsdbValue> value) {
-		this.value = value;
-	}
-
-	public void addPair(OvsdbValue key, OvsdbValue val) {
+	public void addPair(OvsdbValue key, OvsdbValue val) throws OvsdbInvalidValueException {
+		if ((key.getType() == OvsdbValueType.SET)
+				|| (key.getType() == OvsdbValueType.MAP)
+				|| (val.getType() == OvsdbValueType.SET)
+				|| (val.getType() == OvsdbValueType.MAP))
+			throw new OvsdbInvalidValueException("Invalid Entry in Map");
 		this.value.put(key, val);
 	}
 

@@ -5,6 +5,8 @@ enum OvsdbValueType {
 }
 
 public class OvsdbValue {
+	
+	//TODO - May have to consider providing equals and other equivalent methods
 
 	// member variables
 	private String name;
