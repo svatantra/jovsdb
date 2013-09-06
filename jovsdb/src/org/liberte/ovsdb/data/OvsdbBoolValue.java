@@ -19,7 +19,5 @@ public class OvsdbBoolValue extends OvsdbValue {
 		return  String.valueOf(value);
 	}
 
-	
-	
 
 }
