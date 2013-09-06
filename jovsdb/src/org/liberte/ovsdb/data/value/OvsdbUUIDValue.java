@@ -1,4 +1,4 @@
-package org.liberte.ovsdb.data;
+package org.liberte.ovsdb.data.value;
 
 public class OvsdbUUIDValue extends OvsdbValue {
 
@@ -15,6 +15,9 @@ public class OvsdbUUIDValue extends OvsdbValue {
 	public OvsdbUUIDValue(String name, String uuid) {
 		super(name, OvsdbValueType.UUID);
 		value = uuid;
+	}
+	public String getValueAsString() {
+		return  value;
 	}
 
 }

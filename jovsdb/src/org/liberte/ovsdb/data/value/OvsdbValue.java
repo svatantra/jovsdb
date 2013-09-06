@@ -1,7 +1,7 @@
-package org.liberte.ovsdb.data;
+package org.liberte.ovsdb.data.value;
 
 enum OvsdbValueType {
-	INT, BOOL, FLOAT, STRING,UUID
+	INT, BOOL, FLOAT, STRING,UUID,SET,MAP
 }
 
 public class OvsdbValue {

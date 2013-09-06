@@ -1,4 +1,4 @@
-package org.liberte.ovsdb.data;
+package org.liberte.ovsdb.data.value;
 
 public class OvsdbStringValue extends OvsdbValue {
 

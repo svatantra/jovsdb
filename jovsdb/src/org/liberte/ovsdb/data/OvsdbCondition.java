@@ -1,6 +1,6 @@
 package org.liberte.ovsdb.data;
 
-import org.liberte.ovsdb.data.OvsdbValue;
+import org.liberte.ovsdb.data.value.OvsdbValue;
 
 enum ConditionFunction{
 	LESS_THAN,
