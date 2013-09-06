@@ -6,6 +6,7 @@ public class OvsdbInsertOperation extends OvsdbTableOperation {
 
 	
 	private String uuid_name;
+	
 	private OvsdbRow row;
 	public OvsdbRow getRow() {
 		return row;
