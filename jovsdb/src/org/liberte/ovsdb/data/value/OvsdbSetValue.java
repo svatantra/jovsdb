@@ -9,6 +9,7 @@ public class OvsdbSetValue extends OvsdbValue {
 	
 	public OvsdbSetValue(String name) {
 		super(name, OvsdbValueType.SET);
+		value = new ArrayList <OvsdbValue>();
 		
 	}
 	

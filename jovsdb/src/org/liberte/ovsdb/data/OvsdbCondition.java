@@ -18,5 +18,24 @@ public class OvsdbCondition {
 	private String column;
 	private ConditionFunction  function;
 	private OvsdbValue value;
+	
+	public String getColumn() {
+		return column;
+	}
+	public void setColumn(String column) {
+		this.column = column;
+	}
+	public ConditionFunction getFunction() {
+		return function;
+	}
+	public void setFunction(ConditionFunction function) {
+		this.function = function;
+	}
+	public OvsdbValue getValue() {
+		return value;
+	}
+	public void setValue(OvsdbValue value) {
+		this.value = value;
+	}
 
 }
